@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/style/general.css" />
     <link rel="stylesheet" href="assets/style/header.css" />
     <link rel="stylesheet" href="assets/style/main.css" />
+    <link rel="stylesheet" href="assets/style/teksten-modal.css" />
   </head>
   <body>
     <div class="--main-wrapper">
@@ -59,11 +60,14 @@
       <main class="--main-container">
         <section class="--bibliotheken-wrapper">
           <div class="--bibliotheken-container">
-            <div class="--list-container">
+            <div
+              class="--list-container"
+              data-toggle-target="--free-made-teksten"
+            >
               <img src="assets/img/text.svg" alt="text" />
               <p>Tekst</p>
             </div>
-            <div class="--list-container">
+            <div class="--list-container" data-toggle-target="--idel">
               <img src="assets/img/stijl.svg" alt="stijl" />
               <p>Stijl</p>
             </div>
@@ -79,8 +83,12 @@
               <img src="assets/img/uploads.svg" alt="uploads" />
               <p>Uploads</p>
             </div>
-            <div class="--list-container">
-              <img src="assets/img/indeling.svg" alt="indeling" />
+            <div class="--list-container" id="indeling">
+              <img
+                src="assets/img/indeling.svg"
+                alt="indeling"
+                data-toggle-target="listindeling"
+              />
               <p>Indeling</p>
             </div>
             <div class="--list-container">
@@ -88,9 +96,81 @@
               <p>Achtergr</p>
             </div>
           </div>
+          <div class="--idel">ey</div>
+          <div class="--free-made-teksten">
+            <button class="--main-teksten-btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 4.5V9H15.5C16.0312 9 16.5 9.46875 16.5 10C16.5 10.5625 16.0312 11 15.5 11H11V15.5C11 16.0625 10.5312 16.5 10 16.5C9.4375 16.5 9 16.0625 9 15.5V11H4.5C3.9375 11 3.5 10.5625 3.5 10C3.5 9.46875 3.9375 9 4.5 9H9V4.5C9 3.96875 9.4375 3.5 10 3.5C10.5312 3.5 11 3.96875 11 4.5Z"
+                  fill="white"
+                />
+              </svg>
+              Voeg een tekst toe
+            </button>
+            <div class="--teksten-button-container">
+              <button>
+                Kies de stijl van de titel...
+                <div class="--plus-icon-container">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.5 10C16.5 10.4375 16.1562 10.75 15.75 10.75H10.75V15.75C10.75 16.1875 10.4062 16.5312 10 16.5312C9.5625 16.5312 9.25 16.1875 9.25 15.75V10.75H4.25C3.8125 10.75 3.5 10.4375 3.5 10.0312C3.5 9.59375 3.8125 9.25 4.25 9.25H9.25V4.25C9.25 3.84375 9.5625 3.53125 10 3.53125C10.4062 3.53125 10.75 3.84375 10.75 4.25V9.25H15.75C16.1562 9.25 16.5 9.59375 16.5 10Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <button>
+                Kies de stijl van de subtitel...
+                <div class="--plus-icon-container">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.5 10C16.5 10.4375 16.1562 10.75 15.75 10.75H10.75V15.75C10.75 16.1875 10.4062 16.5312 10 16.5312C9.5625 16.5312 9.25 16.1875 9.25 15.75V10.75H4.25C3.8125 10.75 3.5 10.4375 3.5 10.0312C3.5 9.59375 3.8125 9.25 4.25 9.25H9.25V4.25C9.25 3.84375 9.5625 3.53125 10 3.53125C10.4062 3.53125 10.75 3.84375 10.75 4.25V9.25H15.75C16.1562 9.25 16.5 9.59375 16.5 10Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <button>
+                Kies de stijl van de alinea...
+                <div class="--plus-icon-container">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.5 10C16.5 10.4375 16.1562 10.75 15.75 10.75H10.75V15.75C10.75 16.1875 10.4062 16.5312 10 16.5312C9.5625 16.5312 9.25 16.1875 9.25 15.75V10.75H4.25C3.8125 10.75 3.5 10.4375 3.5 10.0312C3.5 9.59375 3.8125 9.25 4.25 9.25H9.25V4.25C9.25 3.84375 9.5625 3.53125 10 3.53125C10.4062 3.53125 10.75 3.84375 10.75 4.25V9.25H15.75C16.1562 9.25 16.5 9.59375 16.5 10Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
         </section>
       </main>
       <footer></footer>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
