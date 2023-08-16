@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SF Movie Poster";
+  src: url("../fonts/SF\ Movie\ Poster.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Freeland";
+  src: url("../fonts/Freeland.ttf") format("ttf");
+}
 .--stijl-container {
   display: flex;
   max-width: 320px;
@@ -50,7 +58,7 @@
   font-family: "SF Movie Poster";
   font-size: 44px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 28px; /* 63.636% */
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -73,7 +81,7 @@
 }
 .--style-card:nth-child(2) p:nth-child(1) {
   color: #292929;
-  font-family: Freeland, sans-serif;
+  font-family: "Freeland";
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
