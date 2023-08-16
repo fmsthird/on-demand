@@ -7,7 +7,7 @@
   src: url("../fonts/Freeland.ttf") format("ttf");
 }
 .--stijl-container {
-  display: flex;
+  display: none;
   max-width: 320px;
   min-height: 804px;
   padding: 16px;
