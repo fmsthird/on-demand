@@ -54,7 +54,9 @@
   margin: 0;
   cursor: context-menu;
 }
-
+.--hasborder.active {
+  border: 1px solid black;
+}
 .--middletext-content {
   display: flex;
   justify-content: space-between;

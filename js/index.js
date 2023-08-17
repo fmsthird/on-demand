@@ -2,6 +2,7 @@
 
 const toolbarTrigger = () => {
   const toolbarListBtns = document.querySelectorAll(".--list-container");
+
   toolbarListBtns.forEach((button) => {
     button.addEventListener("click", (event) => {
       event.preventDefault();
@@ -28,6 +29,7 @@ const toolbarTrigger = () => {
         button.classList.toggle("active");
         targetContainer.style.display =
           targetContainer.style.display === "flex" ? "" : "flex";
+
         textEditoptions();
       }
     });
@@ -55,21 +57,25 @@ const addBorderimg = () => {
 
 const textEditoptions = () => {
   const hasactiveContainer = document.querySelectorAll(".--list-container");
-  const h1editable = document.querySelector("#editexth1");
   const textoptionbuttons = document.querySelectorAll(".--plus-icon-container");
+  const h1editable = document.querySelector("#editexth1");
 
   const hasActiveclass = (show) => {
     const texttooltipContainer = document.querySelector(
       ".--text-option-container"
     );
+
     texttooltipContainer.style.display = show ? "inline-flex" : "none";
   };
-
+  const pointertrue = (show) => {
+    h1editable.style.cursor = show ? "pointer" : "context-menu";
+  };
   hasactiveContainer.forEach((buttons) => {
     const isActive = buttons.classList.contains("active");
     const toggleTarget = buttons.getAttribute("data-toggle-target");
 
     if (toggleTarget === "--free-made-teksten") {
+      pointertrue(isActive);
       h1editable.addEventListener("click", () => {
         hasActiveclass(isActive);
       });
