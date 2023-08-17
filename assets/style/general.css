@@ -5,6 +5,7 @@
   --main-fontcolor: #292929;
   --actionbutton-color: #27ae60;
   --backbutton-color: #f0f0f0;
+  --background-color: #ffffff;
 }
 
 .--main-wrapper {
@@ -18,4 +19,8 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
+}
+
+button {
+  cursor: pointer;
 }
