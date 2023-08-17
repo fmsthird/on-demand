@@ -80,7 +80,10 @@ const textEditoptions = () => {
         hasActiveclass(isActive);
       });
     } else {
-      hasActiveclass(isActive);
+      const texttooltipContainer = document.querySelector(
+        ".--text-option-container"
+      );
+      texttooltipContainer.style.display = "none";
     }
   });
 
