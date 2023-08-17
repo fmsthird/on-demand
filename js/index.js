@@ -28,6 +28,7 @@ const toolbarTrigger = () => {
         button.classList.toggle("active");
         targetContainer.style.display =
           targetContainer.style.display === "flex" ? "" : "flex";
+        textEditoptions();
       }
     });
   });
@@ -53,7 +54,29 @@ const addBorderimg = () => {
 //text-option js
 
 const textEditoptions = () => {
+  const hasactiveContainer = document.querySelectorAll(".--list-container");
+  const h1editable = document.querySelector("#editexth1");
   const textoptionbuttons = document.querySelectorAll(".--plus-icon-container");
+
+  const hasActiveclass = (show) => {
+    const texttooltipContainer = document.querySelector(
+      ".--text-option-container"
+    );
+    texttooltipContainer.style.display = show ? "inline-flex" : "none";
+  };
+
+  hasactiveContainer.forEach((buttons) => {
+    const isActive = buttons.classList.contains("active");
+    const toggleTarget = buttons.getAttribute("data-toggle-target");
+
+    if (toggleTarget === "--free-made-teksten") {
+      h1editable.addEventListener("click", () => {
+        hasActiveclass(isActive);
+      });
+    } else {
+      hasActiveclass(isActive);
+    }
+  });
 
   textoptionbuttons.forEach((buttons) => {
     buttons.addEventListener("click", (event) => {
@@ -65,4 +88,3 @@ const textEditoptions = () => {
 // initialize functions
 toolbarTrigger();
 addBorderimg();
-textEditoptions();

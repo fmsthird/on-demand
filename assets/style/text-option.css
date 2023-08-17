@@ -1,5 +1,5 @@
 .--text-option-container {
-  display: inline-flex;
+  display: none;
   padding: 8px 16px;
   align-items: center;
   gap: 8px;

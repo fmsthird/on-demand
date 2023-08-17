@@ -43,13 +43,14 @@
   border-radius: 4px;
   flex: 1 0 0;
   color: #8f8f8f;
-  cursor: pointer;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   border: 1px dashed #cdcdcd;
   background: #f5f5f5;
+  pointer-events: none;
 }
 .--plus-icon-container {
   display: flex;
@@ -59,7 +60,5 @@
   gap: 10px;
   border-radius: 30px;
   background: #2280d2;
-}
-.--teksten-button-container button svg {
-  cursor: pointer;
+  opacity: 0.3;
 }

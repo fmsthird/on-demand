@@ -52,6 +52,7 @@
   line-height: normal;
   letter-spacing: 1.75rem;
   margin: 0;
+  cursor: context-menu;
 }
 
 .--middletext-content {
