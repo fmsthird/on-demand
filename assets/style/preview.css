@@ -1,8 +1,9 @@
 .--preview-wrapper {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 4.2rem 0 8rem;
+  padding: 5.13rem 0 8rem;
 }
 
 .--preview-container {
