@@ -1,9 +1,13 @@
 .--header-wrapper {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   z-index: 1000;
+  border-top: 4px solid #e98d74;
+  background: #fff;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.08),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08);
 }
 .--header-container {
   display: flex;
@@ -12,10 +16,6 @@
   max-width: 1600px;
   margin: 0 auto;
   padding: 1rem 1rem 0.75rem 1rem;
-  border-top: 4px solid #e98d74;
-  background: #fff;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.08),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08);
 }
 
 .--logo-link-container {

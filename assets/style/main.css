@@ -1,5 +1,7 @@
 .--main-container {
-  padding: 7.5rem 0 8rem 1rem;
+  position: relative;
+  padding: 1rem 1rem 0rem 1rem;
+  display: flex;
 }
 
 .--bibliotheken-wrapper {

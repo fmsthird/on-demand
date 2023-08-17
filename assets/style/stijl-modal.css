@@ -8,7 +8,7 @@
 }
 .--stijl-container {
   display: none;
-  max-width: 320px;
+  width: 320px;
   min-height: 804px;
   padding: 16px;
   flex-direction: column;
